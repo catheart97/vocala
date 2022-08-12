@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Theme Colors -->
+    <color name="colorPrimary">#990000</color>
+    <color name="navigation_bar">#6e0000</color>
+    <color name="status_bar">@color/navigation_bar</color>
+    <color name="material_dark">#303030</color>
+
+    <!-- Basic Colors -->
+    <color name="white">@android:color/white</color>
+    <color name="purple" tools:keep="@color/purple">#9c27b0</color>
+    <color name="magenta" tools:keep="@color/magenta">#e91e63</color>
+    <color name="dark_gray">#7a7a7a</color>
+    <color name="red">#ff0000</color>
+    <color name="dark_blue" tools:keep="@color/dark_blue">#673ab7</color>
+    <color name="cyan" tools:keep="@color/cyan">#2196f3</color>
+    <color name="dark_green" tools:keep="@color/dark_green">#4caf50</color>
+    <color name="green" tools:keep="@color/green">#8bc34a</color>
+    <color name="yellow" tools:keep="@color/yellow">#ffeb3b</color>
+    <color name="orange" tools:keep="@color/orange">#ff9800</color>
+    <color name="brown" tools:keep="@color/brown">#795548</color>
+    <color name="myblack">#383838</color>
+    <color name="mygray">#4F4F4F</color>
+
+    <string-array name="pitch_color_choices" tools:keep="@array/pitch_color_choices">
+        <item>@color/magenta</item>
+        <item>@color/purple</item>
+        <item>@color/dark_blue</item>
+        <item>@color/cyan</item>
+        <item>@color/dark_green</item>
+        <item>@color/green</item>
+        <item>@color/yellow</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/brown</item>
+        <item>@color/dark_gray</item>
+        <item>@color/white</item>
+    </string-array>
+
+</resources>

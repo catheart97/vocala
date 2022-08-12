@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Vocala</string>
+    <string name="title_activity_recordings">Aufnahmen</string>
+    <string name="title_activity_exercises">Übungen</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="title_activity_about">Über</string>
+    <string name="about_open_source_caption">OpenSource-Lizenzen</string>
+    <string name="splash_please_grant_microphone" tools:keep="@string/splash_please_grant_microphone">Ohne Möglichkeit Ton aufzunehmen, kann die App nicht arbeiten.
+    </string>
+    <string name="delete">Löschen</string>
+    <string name="rename">Umbenennen</string>
+    <string name="load">Laden</string>
+    <string name="share">Teilen</string>
+    <string name="no_rec_selected">Keine Aufnahme ausgewählt!</string>
+    <string name="only_one_rec_load">Es kann nur eine Aufnahme geladen werden.</string>
+    <string name="only_one_rec_share">Es kann nur eine Aufnahme geteilt werden</string>
+    <string name="share_rec">Aufnahme teilen</string>
+    <string name="setting_head_general" tools:keep="@string/setting_head_general">Allgemein</string>
+    <string name="setting_head_color" tools:keep="@string/setting_head_color">Farben</string>
+    <string name="setting_color_graph" tools:keep="@string/setting_color_graph">Graph</string>
+    <string name="save">Speichern</string>
+    <string name="only_one_rec_rename">Es kann nur eine Aufnahme umbenannt werden.</string>
+    <string name="save_fail" tools:keep="@string/save_fail">Speichern fehlgeschlagen.</string>
+    <string name="setting_range" tools:keep="@string/setting_range">Stimmumfang</string>
+    <string name="default_sum">Das ist die Standard-Zusammenfassung.</string>
+    <string name="default_ex_title">Neue Übung</string>
+    <string name="setting_color_range" tools:keep="@string/setting_color_range">Stimmumfangsgrenzen</string>
+    <string name="edit_summary">Zusammenfassung bearbeiten</string>
+    <string name="edit_title">Titel bearbeiten</string>
+    <string name="no_exercises_found">Keine Übungen gefunden.</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="no_recordings_found">Keine Aufnahmen gefunden.</string>
+    <string name="no_exercise_selected">Keine Übung ausgewählt.</string>
+    <string name="setting_algo_title" tools:keep="@string/setting_algo_title">Algorithmus</string>
+    <string name="setting_a4_frequency" tools:keep="@string/setting_a4_frequency">A4 Frequenz (a\')</string>
+    <string name="already_exists">Eine Aufnahme mit diesem Namen existiert bereits.</string>
+    <string name="try_again">ERNEUT VERSUCHEN</string>
+    <string name="sth_went_wrong">Etwas ist schiefgelaufen :(</string>
+    <string name="undo">RÜCKGÄNGIG</string>
+    <string name="success_undone_rename">Das Umbenennen wurde erfolgreich rückgängig gemacht.</string>
+    <string name="success_rename">Erfolgreich umbenannt.</string>
+    <string name="files">" Datei(en) gelöscht."</string>
+    <string name="Record" tools:keep="@string/Record">"Aufnahme "</string>
+    <string name="loaded" tools:keep="@string/loaded">" geladen."</string>
+    <string name="Exercise" tools:keep="@string/Exercise">"Übung "</string>
+    <string name="Saved" tools:keep="@string/Saved">" gespeichert."</string>
+    <string name="was_deleted">" wurde gelöscht."</string>
+    <string name="setting_exercise_wait_time" tools:keep="@string/setting_exercise_wait_time">Wartezeit zwischen Übungen (in Sekunden)</string>
+    <string name="piano_ready" tools:keep="@string/piano_ready">Piano ist bereit.</string>
+    <string name="piano">Piano</string>
+    <string name="piano_open">Hier tippen, um\nPiano zu öffnen.</string>
+    <string name="rec_ex_control">Aufnahme/Übungen \nSteuerung</string>
+    <string name="rec_ex_control_text">Verwende die Buttons \nzum aufnehmen, speichern und\nwiedergeben von Übungen oder
+        \nAufnahmen
+    </string>
+    <string name="nav_notice">Übungen, Aufnahmen\nund Metronom</string>
+    <string name="nav_notice_text">Tippe hier um auf deine\nÜbungen und Aufnahmen zuzugreifen.\nHalte gedrückt um die
+        Einstellungen\ndes Metronoms zu ändern. Tippe um es \nzu starten bzw. zu stoppen.
+    </string>
+    <string name="typing">Eingabe</string>
+    <string name="typing_text">Verwende die hier verfügbaren\nButtons zur Eingabe.</string>
+    <string name="ex_type">Übungstyp</string>
+    <string name="ex_type_text">Gib hier an ob die Übung\n(in deiner Range) aufsteigend\noder absteigend sein soll.
+    </string>
+    <string name="speed">Geschwindigkeit</string>
+    <string name="speed_text">Gib hier den\nBPM(beats per minute)-Wert an.</string>
+    <string name="names">Bezeichnungen</string>
+    <string name="names_text">Bearbeite Titel und \nBeschreibung hier.</string>
+    <string name="metronome">Metronom</string>
+    <string name="time_signature">Taktart</string>
+    <string name="Deleted">" "</string>
+    <string name="empty_exercise" tools:keep="@string/empty_exercise">Leere Übung!</string>
+    <string name="to_disable_the_special_sound_on_the_first_beat_set_the_denominator_to_0">Um dem besonderen Ton auf
+        den\nersten Schlag zu deaktivieren, setze \nden Nenner auf 0.
+    </string>
+    <string name="share_exercise">Übung teilen</string>
+    <string name="waiting_time_in_s" tools:keep="@string/waiting_time_in_s">Wartezeit (in s)</string>
+    <string name="you_can_change_the_default_settings_in_the_app_settings" tools:keep="@string/you_can_change_the_default_settings_in_the_app_settings">Du kannst die Standardwerte in
+        den\nEinstellungen ändern.
+    </string>
+    <string name="cascade_exercise" tools:keep="@string/cascade_exercise">Übung kaskadieren</string>
+    <string name="highest_tone" tools:keep="@string/highest_tone">Höchster Ton</string>
+    <string name="lowest_tone" tools:keep="@string/lowest_tone">Tiefster Ton</string>
+    <string name="metronome_bpm">Metronome BPM</string>
+    <string name="NEW">NEU!!!\n</string>
+    <string name="file_support">Dateien, Dateien, Dateien…</string>
+    <string name="new_in_2_1_0">Es ist möglich Übungen zu importiern\nund zu teilen, genauso wie das Laden\nvon externen
+        WAV-Dateien.\nMan kann die Art und Weise wie\nÜbungen geladen werden konfigurieren.
+    </string>
+    <string name="exercises_path">exercises-de</string>
+    <string name="default_ex_msg">Vorgegebene Übungen können nicht geteilt werden.</string>
+    <string name="default_ex_edit">Vorgegebene Übungen können nicht bearbeitet werden</string>
+    <string name="default_ex_del">Vorgegebene Übungen können nicht gelöscht werden (aber in den Einstellungen deaktiviert).</string>
+    <string name="show_default_exercises" tools:keep="@string/show_default_exercises">Standardübungen anzeigen</string>
+    <string name="show_def_ex_msg" tools:keep="@string/show_def_ex_msg">Die vorgegebenen Übungen werden angezeigt.</string>
+    <string name="hide_def_ex_msg" tools:keep="@string/hide_def_ex_msg">Die vorgegebenen Übungen werden nicht angezeigt.</string>
+</resources>

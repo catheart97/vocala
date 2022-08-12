@@ -1,0 +1,3 @@
+[submodule "third_party/TarsosDSP"]
+	path = third_party/TarsosDSP
+	url = git@github.com:JorenSix/TarsosDSP.git

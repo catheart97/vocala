@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+    <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/bpmPicker"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            app:np_textSize="18dp"
+            app:np_selectedTextSize="18dp"
+            app:np_dividerColor="@color/white"
+            app:np_max="280"
+            app:np_min="50"
+            app:np_selectedTextColor="@color/white"
+            app:np_textColor="@color/dark_gray"
+            app:np_value="80"
+            app:np_orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/octave_card"
+            app:layout_constraintBottom_toTopOf="@+id/layout_pitch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/octave_selection_group"
+                    android:padding="4dp"
+                    android:layout_gravity="center_horizontal">
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_0"
+                        android:textColor="@color/white"
+                        android:id="@+id/octave_0"
+                        app:tbgMarkerColor="@color/colorPrimary"/>
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_1"
+                        android:textColor="@color/white"
+                        android:id="@+id/octave_1"
+                        app:tbgMarkerColor="@color/colorPrimary"/>
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2"
+                        android:textColor="@color/white"
+                        android:id="@+id/octave_2"
+                        app:tbgMarkerColor="@color/colorPrimary"/>
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_3"
+                        android:textColor="@color/white"
+                        android:id="@+id/octave_3"
+                        app:tbgMarkerColor="@color/colorPrimary"/>
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_4"
+                        android:textColor="@color/white"
+                        android:id="@+id/octave_4"
+                        app:tbgMarkerColor="@color/colorPrimary"/>
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5"
+                        android:textColor="@color/white"
+                        android:id="@+id/octave_5"
+                        app:tbgMarkerColor="@color/colorPrimary"/>
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_6"
+                        android:textColor="@color/white"
+                        android:id="@+id/octave_6"
+                        app:tbgMarkerColor="@color/colorPrimary"/>
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_7"
+                        android:textColor="@color/white"
+                        android:id="@+id/octave_7"
+                        app:tbgMarkerColor="@color/colorPrimary"/>
+
+                <com.nex3z.togglebuttongroup.button.CircularToggle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_8"
+                        android:textColor="@color/white"
+                        android:id="@+id/octave_8"
+                        app:tbgMarkerColor="@color/colorPrimary"/>
+
+            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/view_button_break"
+            android:layout_weight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view_note_length_group"
+            app:layout_constraintEnd_toStartOf="@+id/view_button_black"
+            app:srcCompat="@drawable/ic_nobreak"
+            style="@style/Widget.AppCompat.ImageButton"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/view_button_up"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="?selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_fluent_arrow_up_24_filled" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/view_button_black"
+            android:layout_weight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view_note_length_group"
+            app:layout_constraintEnd_toStartOf="@+id/view_button_back"
+            app:layout_constraintTop_toBottomOf="@+id/webview_frame"
+            app:srcCompat="@drawable/ic_nohash"
+            style="@style/Widget.AppCompat.ImageButton"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/view_button_back"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="?selectableItemBackgroundBorderless"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/view_note_length_group"
+            app:srcCompat="@drawable/ic_fluent_arrow_left_24_filled"
+            style="@style/Widget.AppCompat.ImageButton"/>
+
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/view_note_length_group"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/octave_card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_whole"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_note_whole"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_half"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_note_half"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_quarter"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_note_quarter"
+                android:checked="true"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_eigth"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_note_eigth"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_sixteenth"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_note_sixteenth"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_thirty_second"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_note_thirty_second"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_note_sixty_fourth"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/layout_pitch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_button_c"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_button_d"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_button_e"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_button_f"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_button_g"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_button_a"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_button_b"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:elevation="4dp"
+            android:background="@drawable/background_circle"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:id="@+id/webview_frame"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/view_button_break"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/bpmPicker">
+
+        <catheart97.vocala.view.ScoreView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/score_view"
+                android:scrollbars="horizontal"/>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/clef_spin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/webview_frame"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view_note_length_group"
+            app:layout_constraintEnd_toStartOf="@+id/view_button_break"
+            android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="@string/BPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/webview_frame"
+            app:layout_constraintEnd_toStartOf="@id/bpmPicker" android:layout_marginEnd="8dp"
+            android:textSize="18sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

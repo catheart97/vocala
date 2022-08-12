@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string-array name="clef_types" translatable="true">
+        <item>Bass</item>
+        <item>Sopran</item>
+        <item>Mezzosopran</item>
+        <item>Alt</item>
+        <item>Tenor</item>
+        <item tools:ignore="TypographyOther">Bariton (C)</item>
+        <item>Bariton (F)</item>
+        <item>Subbass</item>
+        <item>Violin</item>
+    </string-array>
+
+</resources>

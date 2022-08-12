@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        tools:keep="@layout/activity_main_button_layout">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/button_save"
+            android:layout_weight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintEnd_toStartOf="@+id/divider2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/ic_fluent_save_28_filled"
+            style="@style/Widget.AppCompat.ImageButton"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/button_play"
+            android:layout_weight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintEnd_toStartOf="@+id/button_record"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_fluent_play_24_filled"
+            style="@style/Widget.AppCompat.ImageButton"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/button_record"
+            android:layout_weight="1"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintEnd_toStartOf="@+id/button_save"
+            app:srcCompat="@drawable/ic_fluent_record_24_filled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/Widget.AppCompat.ImageButton"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pitch_tone"
+            android:text="A4"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="HardcodedText"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pitch_frequency"
+            android:text="440Hz"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="HardcodedText"/>
+
+    <View
+            android:id="@+id/divider2"
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

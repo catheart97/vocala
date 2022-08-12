@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.preference.PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:asp="http://schemas.android.com/apk/res-auto"
+        tools:keep="@xml/settings">
+
+    <androidx.preference.PreferenceCategory
+            android:title="@string/setting_head_general"
+            app:iconSpaceReserved="false">
+
+        <SeekBarPreference
+                android:key="@string/setting_a4_frequency_key"
+                android:title="@string/setting_a4_frequency"
+                android:defaultValue="@integer/default_A4_frequency"
+                android:max="@integer/max_A4_frequency"
+                asp:min="@integer/min_A4_frequency"
+                app:showSeekBarValue="true"
+                app:iconSpaceReserved="false"/>
+
+        <SeekBarPreference
+                android:key="@string/setting_exercise_wait_time_key"
+                android:title="@string/setting_exercise_wait_time"
+                android:defaultValue="@integer/default_exercise_wait_time"
+                android:max="@integer/max_exercise_wait_time"
+                asp:min="@integer/min_exercise_wait_time"
+                app:showSeekBarValue="true"
+                app:iconSpaceReserved="false"/>
+
+        <ListPreference
+                android:key="@string/setting_algo_key"
+                android:title="@string/setting_algo_title"
+                android:defaultValue="YIN"
+                android:entryValues="@array/preference_algorithm_values"
+                android:entries="@array/preference_algorithm_entries"
+                app:iconSpaceReserved="false"/>
+
+        <catheart97.vocala.view.VocalRangePreference
+                android:key="@string/setting_range_key"
+                android:title="@string/setting_range"/>
+
+        <androidx.preference.CheckBoxPreference
+                android:key="@string/show_preset_exercises"
+                android:title="@string/show_default_exercises"
+                android:summaryOn="@string/show_def_ex_msg"
+                android:summaryOff="@string/hide_def_ex_msg"
+                app:iconSpaceReserved="false"/>
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+            android:title="@string/setting_head_color"
+            app:iconSpaceReserved="false">
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/red"
+                android:key="@string/setting_color_graph_key"
+                android:title="@string/setting_color_graph"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/white"
+                android:key="@string/setting_color_range_key"
+                android:title="@string/setting_color_range"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/red"
+                android:key="@string/setting_color_c_key"
+                android:title="@string/setting_color_c"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_cis_key"
+                android:title="@string/setting_color_cis"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_d_key"
+                android:title="@string/setting_color_d"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_dis_key"
+                android:title="@string/setting_color_dis"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_e_key"
+                android:title="@string/setting_color_e"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_f_key"
+                android:title="@string/setting_color_f"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_fis_key"
+                android:title="@string/setting_color_fis"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_g_key"
+                android:title="@string/setting_color_g"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_gis_key"
+                android:title="@string/setting_color_gis"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_a_key"
+                android:title="@string/setting_color_a"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_ais_key"
+                android:title="@string/setting_color_ais"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+        <com.kizitonwose.colorpreferencecompat.ColorPreferenceCompat
+                android:defaultValue="@color/dark_gray"
+                android:key="@string/setting_color_b_key"
+                android:title="@string/setting_color_b"
+                app:iconSpaceReserved="false"
+                app:colorChoices="@array/pitch_color_choices"/>
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

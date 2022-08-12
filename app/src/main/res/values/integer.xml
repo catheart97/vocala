@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <integer name="min_A4_frequency" tools:keep="@integer/min_A4_frequency">431</integer>
+    <integer name="max_A4_frequency" tools:keep="@integer/max_A4_frequency">449</integer>
+    <integer name="default_A4_frequency" tools:keep="@integer/default_A4_frequency">440</integer>
+    <integer name="default_exercise_wait_time" tools:keep="@integer/default_exercise_wait_time">4</integer>
+    <integer name="min_exercise_wait_time" tools:keep="@integer/min_exercise_wait_time">3</integer>
+    <integer name="max_exercise_wait_time" tools:keep="@integer/max_exercise_wait_time">10</integer>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/view_save"
+            android:icon="@drawable/ic_fluent_save_24_filled"
+            android:title="@string/save"
+            app:showAsAction="ifRoom"/>
+
+    <item
+            android:id="@+id/view_edit_name"
+            android:icon="@drawable/ic_fluent_rename_24_filled"
+            android:title="@string/edit_title"
+            app:showAsAction="ifRoom"/>
+
+    <item
+            android:id="@+id/view_edit_summary"
+            android:icon="@drawable/ic_fluent_rename_24_filled"
+            android:title="@string/edit_summary"
+            app:showAsAction="never"/>
+
+</menu>

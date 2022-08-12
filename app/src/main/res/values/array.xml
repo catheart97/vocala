@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string-array name="clef_types" translatable="true">
+        <item>Bass</item>
+        <item>Soprano</item>
+        <item>Mezzo-Soprano</item>
+        <item>Alto</item>
+        <item>Tenor</item>
+        <item tools:ignore="TypographyOther">Baritone (C)</item>
+        <item>Baritone (F)</item>
+        <item>Subbass</item>
+        <item>Treble</item>
+    </string-array>
+
+    <string-array name="preference_algorithm_entries" tools:keep="@array/preference_algorithm_entries">
+        <item>Jasa YIN</item>
+        <item>McLeodPitchMethod</item>
+        <item>Fast YIN</item>
+        <item>Dynamic Wavelet</item>
+    </string-array>
+
+    <string-array name="preference_algorithm_values" tools:keep="@array/preference_algorithm_values">
+        <item>YIN</item>
+        <item>MPM</item>
+        <item>FFT_YIN</item>
+        <item>DYNAMIC_WAVELET</item>
+    </string-array>
+
+</resources>

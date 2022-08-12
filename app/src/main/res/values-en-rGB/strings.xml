@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Vocala</string>
+    <string name="title_activity_recordings">Recordings</string>
+    <string name="title_activity_exercises">Exercises</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_about">About</string>
+    <string name="about_open_source_caption">OpenSource-Licenses</string>
+    <string name="splash_please_grant_microphone" tools:keep="@string/splash_please_grant_microphone">Without the permission to record audio the app won\'t work.</string>
+    <string name="delete">delete</string>
+    <string name="rename">rename</string>
+    <string name="load">load</string>
+    <string name="share">share</string>
+    <string name="no_rec_selected">No recording selected!</string>
+    <string name="only_one_rec_load">Only one recording can be loaded.</string>
+    <string name="only_one_rec_share">Only one recording can be shared.</string>
+    <string name="share_rec">Share recording</string>
+    <string name="setting_head_general" tools:keep="@string/setting_head_general">General</string>
+    <string name="setting_head_color" tools:keep="@string/setting_head_color">Colors</string>
+    <string name="setting_color_graph" tools:keep="@string/setting_color_graph">Graph</string>
+    <string name="only_one_rec_rename">Only one recording can be renamed.</string>
+    <string name="save">save</string>
+    <string name="save_fail" tools:keep="@string/save_fail">Saving failed.</string>
+    <string name="setting_range" tools:keep="@string/setting_range">Vocal Range</string>
+    <string name="default_sum">This is a default summary.</string>
+    <string name="default_ex_title">New exercise</string>
+    <string name="setting_color_range" tools:keep="@string/setting_color_range">Vocal Range Borders</string>
+    <string name="edit_summary">edit summary</string>
+    <string name="edit_title">edit title</string>
+    <string name="no_exercises_found">No exercises found.</string>
+    <string name="edit">edit</string>
+    <string name="no_recordings_found">No recordings found.</string>
+    <string name="no_exercise_selected">No exercise selected.</string>
+    <string name="setting_algo_title" tools:keep="@string/setting_algo_title">Pitch Algorithm</string>
+    <string name="setting_a4_frequency" tools:keep="@string/setting_a4_frequency">A4 Frequency</string>
+    <string name="already_exists">A record with this name already exists.</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="sth_went_wrong">Something went wrong :(</string>
+    <string name="undo">UNDO</string>
+    <string name="success_undone_rename">Successfully undone renaming.</string>
+    <string name="success_rename">Successfully renamed.</string>
+    <string name="Deleted">"Deleted "</string>
+    <string name="files">" files."</string>
+    <string name="Record" tools:keep="@string/Record">"Record "</string>
+    <string name="loaded" tools:keep="@string/loaded">" loaded."</string>
+    <string name="Exercise" tools:keep="@string/Exercise">"Exercise "</string>
+    <string name="Saved" tools:keep="@string/Saved">" saved."</string>
+    <string name="was_deleted">" was deleted."</string>
+    <string name="setting_exercise_wait_time" tools:keep="@string/setting_exercise_wait_time">Waittime during exercises (in seconds)</string>
+    <string name="piano_ready" tools:keep="@string/piano_ready">Piano is ready.</string>
+    <string name="piano">Piano</string>
+    <string name="piano_open">Tab here to open\nthe Piano.</string>
+    <string name="rec_ex_control">Record/Exercise Control</string>
+    <string name="rec_ex_control_text">Use these buttons to \nrecord, save and play \nyour exercises.</string>
+    <string name="nav_notice">Exercises, Recordings\nand Mentronome</string>
+    <string name="nav_notice_text">Tap here to access your exercises\nand Recordings. Long press for\nMetronom\'s
+        Settings. Simple tap to \nstart and stop the Metronome
+    </string>
+    <string name="typing">Typing</string>
+    <string name="typing_text">Tab here to add Tones to the sheet.</string>
+    <string name="ex_type">Exercise type</string>
+    <string name="ex_type_text">Select whether the exercise \nshould scale up your range \nor down</string>
+    <string name="speed">Speed</string>
+    <string name="speed_text">Specify the BPM of the exercise.</string>
+    <string name="names">Names</string>
+    <string name="names_text">Edit title and description here.</string>
+    <string name="metronome">Metronome</string>
+    <string name="time_signature">Time Signature</string>
+    <string name="empty_exercise" tools:keep="@string/empty_exercise">Empty Exercise!</string>
+    <string name="to_disable_the_special_sound_on_the_first_beat_set_the_denominator_to_0">"To disable the special sound
+        on the first beat, set the denominator to 0. "
+    </string>
+    <string name="share_exercise">Share exercise</string>
+    <string name="waiting_time_in_s" tools:keep="@string/waiting_time_in_s">Waiting Time (in s)</string>
+    <string name="you_can_change_the_default_settings_in_the_app_settings" tools:keep="@string/you_can_change_the_default_settings_in_the_app_settings">You can change the default settings in the\n
+        app settings.
+    </string>
+    <string name="cascade_exercise" tools:keep="@string/cascade_exercise">Cascade Exercise</string>
+    <string name="highest_tone" tools:keep="@string/highest_tone">Highest Tone</string>
+    <string name="lowest_tone" tools:keep="@string/lowest_tone">Lowest Tone</string>
+    <string name="metronome_bpm">Metronome BPM</string>
+    <string name="NEW">NEW!!!</string>
+    <string name="file_support">File Support</string>
+    <string name="new_in_2_1_0">It\'s possible to import and share\nexercises, as well as loading\nexternal
+        wav-files.\nYou can configure the way exercises\nare loaded.
+    </string>
+    <string name="exercises_path">exercises-en</string>
+    <string name="default_ex_msg">Default exercises cannot be shared.</string>
+    <string name="default_ex_edit">This is a default exercise. It cannot be edited.</string>
+    <string name="default_ex_del">This is a default exercise. It cannot be deleted.</string>
+    <string name="show_default_exercises" tools:keep="@string/show_default_exercises">Show default exercises</string>
+    <string name="show_def_ex_msg" tools:keep="@string/show_def_ex_msg">The default exercises will be shown.</string>
+    <string name="hide_def_ex_msg" tools:keep="@string/hide_def_ex_msg">The default exercises won\'t be shown.</string>
+</resources>

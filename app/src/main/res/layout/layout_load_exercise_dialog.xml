@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:keep="@layout/layout_load_exercise_dialog">
+
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cascade_exercise"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@+id/cascade_lbl"
+            app:layout_constraintBottom_toBottomOf="@+id/cascade_lbl"
+            app:layout_constraintStart_toEndOf="@+id/cascade_lbl" android:layout_marginStart="32dp"
+            app:layout_constraintHorizontal_bias="1.0" android:checked="true"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/cascade_exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cascade_lbl" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/highest_tone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/highest_lbl" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/lowest_lbl" android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/waiting_time_in_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wait_lbl" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/highest_lbl"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/lowest_tone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lowest_lbl" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/cascade_lbl" android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lowest_tone" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@+id/lowest_lbl"
+            app:layout_constraintBottom_toBottomOf="@+id/lowest_lbl"
+            app:layout_constraintStart_toEndOf="@+id/lowest_lbl" android:layout_marginStart="32dp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/highest_tone" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@+id/highest_lbl"
+            app:layout_constraintBottom_toBottomOf="@+id/highest_lbl"
+            app:layout_constraintStart_toEndOf="@+id/highest_lbl" android:layout_marginStart="32dp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:id="@+id/wait_time"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/wait_lbl"
+            app:layout_constraintEnd_toStartOf="@+id/wait_time_indicator" android:layout_marginEnd="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:text="@string/you_can_change_the_default_settings_in_the_app_settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/wait_time" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textSize="12sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:text="3s"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/wait_time_indicator" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/wait_time" app:layout_constraintTop_toTopOf="@+id/wait_time"
+            tools:ignore="HardcodedText"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

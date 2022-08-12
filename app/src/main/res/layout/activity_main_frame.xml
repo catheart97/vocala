@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:keep="@layout/activity_main_frame">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/controls_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <com.github.florent37.expansionpanel.ExpansionHeader
+                android:id="@+id/main_piano_expheader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:expansion_headerIndicator="@id/main_piano_header"
+                app:expansion_layout="@id/piano_explayout"
+                app:expansion_toggleOnClick="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            <include layout="@layout/activity_main_button_layout"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_piano_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="19dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/ic_fluent_arrow_left_20_filled"/>
+
+        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+        <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/piano_explayout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                app:expansion_expanded="true">
+
+            <include layout="@layout/layout_piano"
+                     android:visibility="visible"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     app:layout_constraintTop_toBottomOf="@id/main_piano_expheader"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintEnd_toEndOf="parent"/>
+
+        </com.github.florent37.expansionpanel.ExpansionLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/layout_coord"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/controls_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        <catheart97.vocala.view.PitchGraph
+                android:id="@+id/graph_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/controls_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.balysv.materialripple.MaterialRippleLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleDuration="500"
+        android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"
+            android:elevation="1dp"
+            android:id="@+id/card"
+            style="@style/Vocala">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:id="@+id/record_item_icon"
+                    android:cropToPadding="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/ic_fluent_music_note_1_20_filled"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:text="Item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/record_item_name"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintStart_toEndOf="@+id/record_item_icon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/record_item_length" tools:ignore="HardcodedText"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:text="XX.XX.XXXX - XX.XX"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/record_item_date"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/record_item_name"
+                    app:layout_constraintTop_toBottomOf="@+id/record_item_name"
+                    app:layout_constraintStart_toEndOf="@+id/record_item_icon" tools:ignore="HardcodedText"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:text="1:32:01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/record_item_length"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/record_item_name"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" tools:ignore="HardcodedText"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</com.balysv.materialripple.MaterialRippleLayout>
+
+

@@ -1,0 +1,12 @@
+<set
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:shareInterpolator="false"
+        tools:keep="@anim/left2right_out">
+
+    <translate
+            android:fromXDelta="100%"
+            android:toXDelta="0%"
+            android:duration="700"/>
+
+</set>

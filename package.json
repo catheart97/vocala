@@ -1,0 +1,14 @@
+{
+  "name": "vocala",
+  "version": "1.0.0",
+  "description": "Android application for pitch detection designed for singers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vexflow": "^4.0.3"
+  }
+}

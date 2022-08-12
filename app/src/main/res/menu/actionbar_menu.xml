@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+        xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/show_exercises"
+            android:icon="@drawable/ic_fluent_bookmark_24_filled"
+            android:title="@string/title_activity_exercises"
+            app:showAsAction="always"
+            tools:ignore="AlwaysShowAction"/>
+
+    <item
+            android:id="@+id/show_recordings"
+            android:icon="@drawable/ic_fluent_voicemail_24_filled"
+            android:title="@string/title_activity_recordings"
+            app:showAsAction="always"
+            tools:ignore="AlwaysShowAction"/>
+
+    <item
+            android:id="@+id/show_metronome"
+            android:icon="@drawable/ic_fluent_timer_24_filled"
+            android:title="@string/metronome"
+            app:showAsAction="always"
+            tools:ignore="AlwaysShowAction"/>
+
+    <item
+            android:id="@+id/show_settings"
+            android:icon="@drawable/ic_fluent_settings_24_filled"
+            android:title="@string/title_activity_settings"
+            app:showAsAction="never"/>
+
+</menu>
