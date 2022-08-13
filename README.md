@@ -1,3 +1,5 @@
+<img width="15%;" align="right" style="display:block;" src="app/src/main/ic_launcher-web.png"/>
+
 # Vocala
 Android application for pitch detection designed for singers.
 
@@ -5,6 +7,9 @@ Android application for pitch detection designed for singers.
 * Pitch detection on a line chart
 * Exercise playing on included Piano
 * Metronome
+
+## Screenshots
+
 
 ## Build
 
