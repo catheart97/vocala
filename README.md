@@ -10,6 +10,10 @@ Android application for pitch detection designed for singers.
 
 ## Screenshots
 
+<div align="center">
+<img width="25%;" src="screenshots/Screenshot_20220813-110437.png" />
+<img width="25%;" src="screenshots/Screenshot_20220813-110459.png" />
+</div>
 
 ## Build
 
